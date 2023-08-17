@@ -18,6 +18,8 @@ gpasswd -a appHusky wheel
 gpasswd -a appHusky root
 chmod -R 666 /var/appHusky
 
+mkdir /run/php
+
 systemctl restart nginx
 systemctl restart php82-php-fpm
-
+mc
