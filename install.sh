@@ -19,7 +19,8 @@ cp -r core/default/* /
 adduser appHusky
 gpasswd -a appHusky wheel
 gpasswd -a appHusky root
-chmod -R 666 /var/appHusky
+chmod -R 775 /var/appHusky
+chmod -R 777 /usr/share/appHusky
 
 mkdir -p /run/php
 mkdir -p /var/appHusky/log/nginx/default
@@ -27,4 +28,3 @@ mkdir -p /var/appHusky/log/system/nginx
 
 systemctl restart nginx
 systemctl restart php82-php-fpm
-mc
