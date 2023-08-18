@@ -1,2 +1,2 @@
 <?php
-phpinfo();
+require 'core/init.php';
